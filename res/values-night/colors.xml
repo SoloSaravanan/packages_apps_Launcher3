@@ -15,6 +15,8 @@
   ~ limitations under the License.
   -->
 <resources>
+    <color name="icon_background">#FF000000</color>
+
     <!-- Home screen files -->
     <color name="home_screen_files_folder_icon_color">@color/system_primary_dark</color>
 </resources>

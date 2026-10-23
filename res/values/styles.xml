@@ -40,8 +40,8 @@
     <style name="LauncherTheme" parent="@style/DynamicColorsBaseLauncherTheme">
         <item name="android:textColorSecondary">#DE000000</item>
         <item name="groupHighlight">@color/materialColorSurfaceContainerHigh</item>
-        <item name="allAppsScrimColor">#FF000000</item>
-        <item name="allappsHeaderProtectionColor">#FF000000</item>
+        <item name="allAppsScrimColor">@color/materialColorSurfaceDim</item>
+        <item name="allappsHeaderProtectionColor">@color/materialColorSurfaceContainerHighest</item>
         <item name="allAppsNavBarScrimColor">#66FFFFFF</item>
         <item name="allAppsSearchTextColor">@color/widget_picker_search_text_color_light</item>
         <item name="allAppsSurfaceLow">@color/materialColorSurfaceContainerLow</item>

@@ -353,7 +353,9 @@ public class ActivityAllAppsContainerView<T extends Context & ActivityContext>
         int layerFg = getContext().getColor(R.color.blur_shade_panel_fg);
         int layerBg = getContext().getColor(R.color.blur_shade_panel_bg);
         mBottomSheetBackgroundColorOverBlur = ColorUtils.compositeColors(layerFg, layerBg);
-        mBottomSheetBackgroundColorBlurFallback = Color.BLACK;
+        mBottomSheetBackgroundColorBlurFallback = Utilities.isDarkTheme(getContext())
+                ? Color.BLACK
+                : getContext().getColor(android.R.color.system_accent2_200);
 
         mSearchUiManager.initializeSearch(this);
         updateOneUiPageIndicatorState();
